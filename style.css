@@ -157,6 +157,33 @@ body {
   filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
 }
 
+/* 每个技能项：图标 + 文字 */
+.skills-grid .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 96px;
+  text-align: center;
+}
+
+.skills-grid .skill img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.95;
+}
+
+.skill-label {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .skills-grid img {
     width: 48px;

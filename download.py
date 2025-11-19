@@ -5,7 +5,7 @@ icons = {
     "java": "java-original",
     "spring": "spring-original",
     "python": "python-original",
-    "django": "django-plain",  # 只有 plain 版
+    "django": "django-plain",  # ===
     "fastapi": "fastapi-original",
     "javascript": "javascript-original",
     "typescript": "typescript-original",
