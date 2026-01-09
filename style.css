@@ -28,7 +28,6 @@ html, body, .section, header, footer {
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
@@ -57,7 +56,7 @@ body {
 #themeToggle:hover { transform: rotate(20deg); }
 
 /* --- Hero --- */
-.hero { padding: 100px 0; text-align: center; }
+.hero { padding: 80px 0 60px; text-align: center; }
 .avatar {
   width: 140px; height: 140px; border-radius: 50%;
   box-shadow: 0 10px 30px var(--shadow); margin-bottom: 28px;
@@ -90,15 +89,13 @@ body {
 
 /* --- Section layout tuning --- */
 .section {
-  height: 100vh; /* 每个区块占一屏 */
-  scroll-snap-align: start;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 60px; /* 给标题下留足呼吸空间 */
+  margin-bottom: 40px;
 }
 
 /* Projects & Experience grid alignment fix */
@@ -123,9 +120,9 @@ body {
 }
 
 /* 调整 section 间的视觉间距，防止“顶” */
-.section + .section {
+/* .section + .section {
   margin-top: 80px;
-}
+} */
 
 
 /* --- Skills / Experience With --- */
@@ -193,7 +190,7 @@ body {
 /* --- EXPERIENCE --- */
 #experience {
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0;
   max-width: 1100px;
   margin: 0 auto;
   padding-left: 24px;
@@ -268,7 +265,7 @@ body {
 /* --- Projects Section --- */
 #projects {
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 #projects .section-title {
@@ -357,7 +354,7 @@ body {
 /* --- CONTACT --- */
 #contact {
   text-align: center;
-  padding: 100px 0 80px;
+  padding: 80px 0 60px;
 }
 
 #contact .section-title {
