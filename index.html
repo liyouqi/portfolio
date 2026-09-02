@@ -1,233 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="site-nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="Home">
-        <img src="assets/logo.svg" alt="Dada">
-      </a>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="https://liyouqi.github.io/">Blog</a>
-        <a href="https://github.com/liyouqi">Github</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="section hero">
-    <div class="container hero-inner reveal">
-      <img class="avatar" src="assets/avatar.jpg" alt="avatar">
-      <h1>I code for fun —<br> and share <span class="gradient">the journey. </span></h1>
-      <p class="lede">
-        I’ve spent the past few years building software across multiple industries — starting from mobile gaming, moving through mobile internet services, and later contributing to digital transformation in the architecture field. Through these experiences, I’ve learned that great engineering is not just about code, but about curiosity, empathy, and clarity.
-        </p>
-
-        <p class="lede">
-        Now I’m in France, taking a step back to study, experiment, and grow — exploring how data, AI, and financial innovation can shape the next wave of intelligent systems.
-        </p>
-      <!-- <div class="cta">
-        <a class="btn" href="#contact">Get In Touch</a>
-        <a class="btn outline" href="assets/CV.pdf" target="_blank">Github</a>
-      </div> -->
-      <div class="cta">
-        <a class="btn" href="#contact">Get In Touch</a>
-        <a class="btn outline" href="https://liyouqi.github.io/" target="_blank">Blog</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Daniel Lee is a software engineer building practical AI systems for FinTech, regulatory technology and ICT risk." />
+    <meta property="og:title" content="Daniel Lee — AI · FinTech · RegTech" />
+    <meta property="og:description" content="Practical AI systems, regulatory knowledge and ICT-risk workflows." />
+    <meta property="og:type" content="website" />
+    <title>Daniel Lee — AI · FinTech · RegTech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="Daniel Lee — home"><img src="assets/logo.svg" alt="Daniel Lee" /><span>Daniel Lee</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-links" id="siteNav" aria-label="Main navigation">
+          <a href="#home">Home</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="https://liyouqi.github.io/" target="_blank" rel="noopener">Blog ↗</a><a href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub ↗</a><a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" aria-label="Switch to light theme" title="Switch theme">☼</button>
       </div>
+    </header>
 
-    </div>
-  </section>
-
-    <!-- Skills / Experience With -->
-  <section id="skills" class="section">
-    <div class="container reveal">
-      <h2 class="section-title accent-blue">Experience With</h2>
-      <div class="skills-grid">
-        <!-- Technical Skills -->
-        <div class="skill"><img src="assets/icons/java.svg" alt="Java"><span class="skill-label">Java</span></div>
-        <div class="skill"><img src="assets/icons/springboot.svg" alt="Spring Boot"><span class="skill-label">Spring Boot</span></div>
-        <div class="skill"><img src="assets/icons/python.svg" alt="Python"><span class="skill-label">Python</span></div>
-        <div class="skill"><img src="assets/icons/django.svg" alt="Django"><span class="skill-label">Django</span></div>
-        <div class="skill"><img src="assets/icons/fastapi.svg" alt="FastAPI"><span class="skill-label">FastAPI</span></div>
-        <div class="skill"><img src="assets/icons/javascript.svg" alt="JavaScript"><span class="skill-label">JavaScript</span></div>
-        <div class="skill"><img src="assets/icons/typescript.svg" alt="TypeScript"><span class="skill-label">TypeScript</span></div>
-        <div class="skill"><img src="assets/icons/nodejs.svg" alt="Node.js"><span class="skill-label">Node.js</span></div>
-        <div class="skill"><img src="assets/icons/react.svg" alt="React"><span class="skill-label">React</span></div>
-        <div class="skill"><img src="assets/icons/html5.svg" alt="HTML5"><span class="skill-label">HTML5</span></div>
-        <div class="skill"><img src="assets/icons/css3.svg" alt="CSS3"><span class="skill-label">CSS3</span></div>
-        <div class="skill"><img src="assets/icons/mysql.svg" alt="MySQL"><span class="skill-label">MySQL</span></div>
-        <div class="skill"><img src="assets/icons/mongodb.svg" alt="MongoDB"><span class="skill-label">MongoDB</span></div>
-        <div class="skill"><img src="assets/icons/git.svg" alt="Git"><span class="skill-label">Git</span></div>
-        <div class="skill"><img src="assets/icons/docker.svg" alt="Docker"><span class="skill-label">Docker</span></div>
-        <div class="skill"><img src="assets/icons/linux.svg" alt="Linux"><span class="skill-label">Linux</span></div>
-        <div class="skill"><img src="assets/icons/aws.svg" alt="AWS"><span class="skill-label">AWS</span></div>
-        <div class="skill"><img src="assets/icons/googlecloud.svg" alt="GCP"><span class="skill-label">GCP</span></div>
-
-        <!-- Data & FinTech Skills -->
-        <div class="skill"><img src="assets/icons/pandas.svg" alt="Pandas"><span class="skill-label">Pandas</span></div>
-        <div class="skill"><img src="assets/icons/numpy.svg" alt="NumPy"><span class="skill-label">NumPy</span></div>
-        <div class="skill"><img src="assets/icons/scikitlearn.svg" alt="Scikit-learn"><span class="skill-label">Scikit-learn</span></div>
-        <div class="skill"><img src="assets/icons/apachehadoop.svg" alt="Hadoop"><span class="skill-label">Hadoop</span></div>
-        <div class="skill"><img src="assets/icons/apachespark.svg" alt="Spark"><span class="skill-label">Spark</span></div>
-        <div class="skill"><img src="assets/icons/blockchaindotcom.svg" alt="Blockchain"><span class="skill-label">Blockchain</span></div>
-        <div class="skill"><img src="assets/icons/ios.svg" alt="iOS"><span class="skill-label">iOS</span></div>
-        <div class="skill"><img src="assets/icons/cocos2d.svg" alt="Cocos2d"><span class="skill-label">Cocos2d</span></div>
-        <div class="skill"><img src="assets/icons/flutter.svg" alt="Flutter"><span class="skill-label">Flutter</span></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Projects -->
-  <section id="projects" class="section reveal">
-  <div class="container">
-    <h2 class="section-title gradient">PROJECTS</h2>
-    <div class="projects-grid">
-      <!-- Market fear Regime Project -->
-      <div class="project-card">
-        <img src="assets/projects/3-multiasset-cluster-centers.png" alt="Market fear Regime Project">
-        <div class="project-info">
-          <p class="pill">Data Mining</p>
-          <h3>Market fear Regime Project</h3>
-          <p class="desc">
-            Analyzed multi-asset financial time series data to identify market fear regimes 
-            using clustering algorithms such as K-Means and DBSCAN. Developed interactive 
-            visualizations with Plotly to illustrate regime shifts and their implications 
-            for portfolio management.
-          </p>
-          <a href="https://liyouqi.github.io/market-regime-identification/" class="project-link" target="_blank" rel="noopener">VIEW PROJECT</a>
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid reveal">
+          <div class="hero-copy">
+            <img class="profile-photo" src="assets/avatar.jpg" alt="Portrait of Daniel Lee" />
+            <p class="eyebrow">Daniel Lee</p>
+            <h1>Building AI systems for <span>RegTech, FinTech &amp; ICT Risk.</span></h1>
+            <p class="hero-role">Software Engineer · AI Builder · FinTech</p>
+            <p class="lede">I build practical AI systems that turn complex regulatory and risk information into searchable knowledge, traceable answers and executable workflows.</p>
+            <div class="cta"><a class="btn primary" href="#projects">View projects <span>↓</span></a><a class="btn secondary" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Read my blog ↗</a></div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- CPS Project -->
-      <div class="project-card">
-        <img src="assets/projects/microservices.png" alt="CPS Project">
-        <div class="project-info">
-          <p class="pill">SYSTEM DESIGN</p>
-          <h3>Cyber-Physical System</h3>
-          <p class="desc">
-            Designed and implemented a simulation framework for distributed sensor networks 
-            and real-time control in smart environments, focusing on data synchronization, 
-            edge computing, and system resilience.
-          </p>
-          <a href="http://www.bhome.com.cn/en/manu/#industrial" class="project-link" target="_blank" rel="noopener">VIEW PROJECT</a>
+      <section id="projects" class="section featured-section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="kicker">Featured AI projects</p>
+            <h2>AI products for complex, high-accountability work.</h2>
+            <p>Current product directions are shown with their intended workflows. Links will be added when public demos, repositories or architecture notes are ready.</p>
+          </div>
+          <div class="featured-grid">
+            <article class="feature-card platform-card">
+              <div class="card-meta">RegTech · Knowledge platform</div>
+              <img class="feature-cover" src="assets/projects/knowledgegraph1.jpg" alt="Network visualisation for a regulatory knowledge graph" />
+              <h3>Regulatory Knowledge Platform</h3>
+              <p>Building a traceable regulatory knowledge layer for European financial regulation—organising regulations, articles, metadata and legal relationships into a structured, explorable system.</p>
+              <ul class="tag-list"><li>EUR-Lex</li><li>Knowledge graph</li><li>Article / recital</li><li>Evidence</li></ul>
+              <div class="project-actions"><span class="project-button disabled">Live demo · soon</span><span class="project-button disabled">GitHub · soon</span><span class="project-button disabled">Architecture · soon</span></div>
+            </article>
+            <article class="feature-card rag-card">
+              <div class="card-meta">RAG · LLM · Regulatory AI</div>
+              <img class="feature-cover" src="assets/projects/rag.png" alt="Retrieval-augmented generation workflow" />
+              <h3>Regulatory RAG</h3>
+              <p>An evidence-grounded regulatory question-answering system combining query planning, claim decomposition, hybrid retrieval and citation-bound LLM answers.</p>
+              <ul class="tag-list"><li>Query planner</li><li>BM25 + vectors</li><li>Hybrid retrieval</li><li>Citations</li></ul>
+              <div class="project-actions"><span class="project-button disabled">Live demo · soon</span><span class="project-button disabled">GitHub · soon</span><span class="project-button disabled">Architecture · soon</span></div>
+            </article>
+            <article class="feature-card risk-card">
+              <div class="card-meta">AI agent · ICT risk · DORA</div>
+              <img class="feature-cover" src="assets/projects/security-agent.jpg" alt="Information-security risk management dashboard" />
+              <h3>Second Line Risk Copilot</h3>
+              <p>An AI-assisted workflow for second-line ICT-risk assessment that converts regulatory obligations into risks, control objectives, metrics, challenge activities and structured assessment outputs.</p>
+              <ul class="tag-list"><li>DORA</li><li>Control objectives</li><li>KPI / KRI</li><li>Assessment</li></ul>
+              <div class="project-actions"><span class="project-button disabled">Live demo · soon</span><span class="project-button disabled">GitHub · soon</span><span class="project-button disabled">Architecture · soon</span></div>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Data Mining Project -->
-      <div class="project-card">
-        <img src="assets/projects/datamining.png" alt="Data Mining Project">
-        <div class="project-info">
-          <p class="pill">DATA ANALYTICS</p>
-          <h3>Data Mining & Pattern Discovery</h3>
-          <p class="desc">
-            Developed a complete data mining workflow for large-scale datasets, 
-            including preprocessing, clustering, and model evaluation using Python 
-            and Scikit-learn, with visualization in Power BI and Tableau.
-          </p>
-          <a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" class="project-link" target="_blank" rel="noopener">VIEW PROJECT</a>
+      <section id="research" class="section section-alt">
+        <div class="container reveal">
+          <div class="section-heading row-heading"><div><p class="kicker">Selected work &amp; research</p><h2>Earlier projects that show technical range.</h2></div><p>Research and engineering work across financial data, distributed systems and analytics.</p></div>
+          <div class="research-grid">
+            <article class="research-card"><img src="assets/projects/3-multiasset-cluster-centers.png" alt="Multi-asset market regime visualisation" /><div><p>Data mining</p><h3>Market Regime Identification</h3><a href="https://liyouqi.github.io/market-regime-identification/" target="_blank" rel="noopener">View project ↗</a></div></article>
+            <article class="research-card"><img src="assets/projects/datamining.png" alt="Data-mining visualisation" /><div><p>Network analysis</p><h3>Ethereum Network Analysis</h3><a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">View project ↗</a></div></article>
+            <article class="research-card"><img src="assets/projects/microservices.png" alt="Diagram for a cyber-physical system" /><div><p>System design</p><h3>Cyber-Physical Systems</h3><a href="http://www.bhome.com.cn/en/manu/#industrial" target="_blank" rel="noopener">View reference ↗</a></div></article>
+          </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <div class="container reveal">
-    <h2 class="section-title accent-blue">EXPERIENCE</h2>
-
-    <!-- Experience Item 1 -->
-    <div class="experience-item">
-      <div class="experience-header">
-        <div class="experience-logo">
-          <img src="assets/icons/games.png" alt="Game Industry">
+      <section id="experience" class="section">
+        <div class="container reveal">
+          <div class="section-heading"><p class="kicker">Experience</p><h2>From software engineering to AI, risk and regulated systems.</h2></div>
+          <div class="experience-list">
+            <article class="experience-item"><span class="experience-period">Now</span><div><h3>ICT Risk, Cybersecurity &amp; FinTech</h3><p>Working in a European financial-services context across ICT risk, cybersecurity, vulnerability management, monitoring, risk controls and AI applications—without exposing confidential systems or data.</p></div></article>
+            <article class="experience-item"><span class="experience-period">2021 – 2023</span><div><h3>Digital Technology &amp; Enterprise Systems</h3><p>Delivered backend and data integration for enterprise platforms, ERP/SaaS workflows, microservices and operational business systems in a digital-transformation environment.</p></div></article>
+            <article class="experience-item"><span class="experience-period">2014 – 2021</span><div><h3>Software Engineering</h3><p>Built backend services, APIs, distributed systems and client/server products across mobile gaming and internet platforms.</p></div></article>
+            <article class="experience-item"><span class="experience-period">Europe</span><div><h3>Computer Science &amp; FinTech</h3><p>Continued technical study in Data and FinTech, extending an engineering foundation into data science, AI and financial innovation.</p></div></article>
+          </div>
         </div>
-        <h3>Software Engineer — Mobile Game Industry</h3>
-        <span class="experience-date">2014 – 2018</span>
-      </div>
-      <p>Started my career in the mobile gaming industry, working on backend services and in-game data systems supporting large user bases. Collaborated closely with designers and client developers to build responsive APIs and data pipelines for real-time player analytics. This experience taught me how to design systems that balance creativity, scalability, and performance under heavy load.</p>
-    </div>
+      </section>
 
-    <!-- Experience Item 2 -->
-    <div class="experience-item">
-      <div class="experience-header">
-        <div class="experience-logo">
-          <img src="assets/icons/mobile.png" alt="Mobile Internet">
+      <section id="technologies" class="section technologies-section">
+        <div class="container reveal">
+          <div class="section-heading"><p class="kicker">Core technologies</p><h2>A focused toolkit for AI systems and dependable delivery.</h2></div>
+          <div class="technology-grid">
+            <article><div class="tech-icons"><img src="assets/icons/python.svg" alt="" /><img src="assets/icons/scikitlearn.svg" alt="" /><img src="assets/icons/blockchaindotcom.svg" alt="" /></div><h3>AI &amp; LLM</h3><p>LLM APIs · RAG · LangGraph · Hybrid retrieval · Embeddings · AI agents</p></article>
+            <article><div class="tech-icons"><img src="assets/icons/java.svg" alt="" /><img src="assets/icons/springboot.svg" alt="" /><img src="assets/icons/fastapi.svg" alt="" /></div><h3>Backend</h3><p>Python · FastAPI · Java · Spring · REST APIs · Microservices</p></article>
+            <article><div class="tech-icons"><img src="assets/icons/mysql.svg" alt="" /><img src="assets/icons/pandas.svg" alt="" /><img src="assets/icons/numpy.svg" alt="" /></div><h3>Data</h3><p>PostgreSQL · MySQL · Pandas · Scikit-learn · Knowledge graphs</p></article>
+            <article><div class="tech-icons"><img src="assets/icons/docker.svg" alt="" /><img src="assets/icons/git.svg" alt="" /><img src="assets/icons/googlecloud.svg" alt="" /></div><h3>Platform</h3><p>Docker · Git · Linux · Google Cloud · CI/CD</p></article>
+          </div>
         </div>
-        <h3>Backend Developer — Mobile Internet Platform</h3>
-        <span class="experience-date">2018 – 2021</span>
-      </div>
-      <p>Transitioned into the mobile internet sector, focusing on backend architecture, API integration, and large-scale data synchronization. Designed and optimized microservices for high-concurrency user scenarios, while also contributing to business data analytics and A/B testing frameworks. Gained hands-on experience in distributed systems and cloud deployment practices.</p>
-    </div>
+      </section>
 
-    <!-- Experience Item 3 -->
-    <div class="experience-item">
-      <div class="experience-header">
-        <div class="experience-logo">
-          <img src="assets/icons/building.png" alt="Architecture Tech">
+      <section class="writing-section">
+        <div class="container writing-inner reveal"><p class="kicker">Writing</p><h2>I write about AI, regulatory technology, cybersecurity, network science and the things I learn while building.</h2><a class="text-arrow" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Read the blog <span>→</span></a></div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-inner reveal">
+          <p class="kicker">Contact</p><h2>Interested in AI, FinTech, RegTech or practical systems for complex information?</h2><p>Feel free to reach out.</p>
+          <div class="contact-actions"><a class="btn primary" href="https://www.linkedin.com/in/da-l-04901483" target="_blank" rel="noopener">Connect on LinkedIn <span>↗</span></a><a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
         </div>
-        <h3>Software Engineer — Digital Architecture Transformation</h3>
-        <span class="experience-date">2021 – 2023</span>
-      </div>
-      <p>Joined a digital transformation initiative in the architecture and construction industry. Led backend and data integration for enterprise resource platforms, barcode tracking systems, and warehouse management modules. Worked on connecting on-site IoT data with visualization dashboards, driving real-time decision support for management.</p>
-    </div>
+      </section>
+    </main>
 
-    <!-- Experience Item 4 -->
-    <div class="experience-item">
-      <div class="experience-header">
-        <div class="experience-logo">
-          <img src="assets/icons/france.png" alt="France">
-        </div>
-        <h3>Master Student — Data & FinTech, France</h3>
-        <span class="experience-date">2023 – Present</span>
-      </div>
-      <p>Currently pursuing a master’s degree in Data and FinTech in France, exploring the intersection of data science, AI, and financial innovation. This period has allowed me to consolidate my technical background while expanding into global perspectives on digital finance and innovation.</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact" class="section reveal">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-text">
-      Let’s connect and exchange ideas — I’m always open to discussions about 
-      data, systems, and how technology can shape better digital experiences.  
-      Currently based in France, pursuing my master’s in Data & FinTech.
-    </p>
-
-    <div class="contact-links">
-      <!-- <a href="mailto:yourname@gmail.com" class="email">yourname@gmail.com</a> -->
-      <div class="social-links">
-        <a href="https://github.com/liyouqi" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/da-l-04901483" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <footer class="site-footer">
-    <div class="container">© 2025 Your Name</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <footer class="site-footer"><div class="container"><span>© <span id="year"></span> Daniel Lee</span><span>AI · FinTech · RegTech</span></div></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-<!-- https://brittanychiang.com/ -->
