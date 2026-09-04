@@ -81,7 +81,7 @@
           <div class="build-origin"><span>Input</span><strong>European regulation</strong><i aria-hidden="true">↓</i></div>
           <ol class="build-flow" aria-label="Product progression from knowledge to action">
             <li>
-              <span class="flow-number">01</span>
+              <span class="flow-cue">make sense of it</span>
               <div>
                 <span class="flow-layer">Knowledge layer</span>
                 <h3>Regulatory Knowledge Platform</h3>
@@ -89,7 +89,7 @@
               </div>
             </li>
             <li>
-              <span class="flow-number">02</span>
+              <span class="flow-cue">ask it properly</span>
               <div>
                 <span class="flow-layer">Intelligence layer</span>
                 <h3>Regulatory RAG</h3>
@@ -97,7 +97,7 @@
               </div>
             </li>
             <li>
-              <span class="flow-number">03</span>
+              <span class="flow-cue">put it to work</span>
               <div>
                 <span class="flow-layer">Workflow layer</span>
                 <h3>Second Line Risk Copilot</h3>
@@ -112,7 +112,7 @@
       <section class="project-story project-one section" aria-labelledby="project-platform-title">
         <div class="container reveal">
           <header class="project-title-block">
-            <p class="project-index">01 / Knowledge layer</p>
+            <p class="project-index">Knowledge layer / where it starts</p>
             <h2 id="project-platform-title">Regulatory<br />Knowledge Platform</h2>
             <p>Turning fragmented regulatory texts into structured, explorable knowledge.</p>
           </header>
@@ -122,12 +122,12 @@
               <figcaption><span>Linked source material</span><span>Documents · Articles · Recitals · Relationships</span></figcaption>
             </figure>
             <aside class="platform-notes" aria-label="Platform design notes">
-              <p class="margin-note">The work starts before the model: make the source material understandable first.</p>
-              <ol>
-                <li><span>Source</span><p>Keep official European material and provenance close to every record.</p></li>
-                <li><span>Structure</span><p>Treat articles, recitals, metadata and amendments as connected objects.</p></li>
-                <li><span>Explore</span><p>Let people move through the law without losing document context.</p></li>
-              </ol>
+              <p class="margin-note">Before asking a model anything, I want to know what the source is—and how the pieces relate.</p>
+              <div class="platform-note-stack">
+                <div class="platform-note"><span>I start with the source</span><p>Official European material and provenance stay close to every record.</p></div>
+                <div class="platform-note"><span>Then I give it a shape</span><p>Articles, recitals, metadata and amendments become connected objects.</p></div>
+                <div class="platform-note"><span>So it stays navigable</span><p>You can move through the law without losing the document around it.</p></div>
+              </div>
               <div class="project-actions">
                 <a class="button button-primary" href="https://platform.lida.today" target="_blank" rel="noopener">Explore platform <span aria-hidden="true">↗</span></a>
                 <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
@@ -141,11 +141,11 @@
         <div class="container reveal">
           <div class="rag-layout">
             <article class="rag-copy">
-              <p class="project-index">02 / Intelligence layer</p>
+              <p class="project-index">Intelligence layer / where it gets useful</p>
               <h2 id="project-rag-title">Regulatory RAG</h2>
               <p class="project-subtitle">Evidence-grounded regulatory question answering.</p>
               <p class="project-lead">A good answer is not the starting point. The difficult part is deciding what the question is really asking, finding evidence for each claim and making uncertainty visible.</p>
-              <blockquote>Break the question apart. Retrieve for each claim. Generate only from evidence.</blockquote>
+              <blockquote>I don’t want the model to sound confident. I want it to show its work.</blockquote>
               <div class="project-actions">
                 <span class="button button-disabled" aria-label="Regulatory RAG demo is in progress">Demo in progress</span>
                 <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
@@ -157,12 +157,12 @@
             </figure>
           </div>
           <ol class="rag-path" aria-label="Regulatory RAG pipeline">
-            <li><span>01</span><strong>Question</strong><small>What is actually being asked?</small></li>
-            <li><span>02</span><strong>Plan</strong><small>Choose sources and retrieval route.</small></li>
-            <li><span>03</span><strong>Claims</strong><small>Split multi-part questions.</small></li>
-            <li><span>04</span><strong>Retrieve</strong><small>Combine lexical and semantic signals.</small></li>
-            <li><span>05</span><strong>Evidence</strong><small>Bind passages to each claim.</small></li>
-            <li><span>06</span><strong>Answer</strong><small>Cite—or say what is missing.</small></li>
+            <li><strong>A real question</strong><small>Usually messier than it first looks.</small></li>
+            <li><strong>A plan</strong><small>Before reaching for embeddings.</small></li>
+            <li><strong>A few claims</strong><small>So each part can earn its evidence.</small></li>
+            <li><strong>Two kinds of search</strong><small>Because keywords still matter.</small></li>
+            <li><strong>Evidence</strong><small>Attached to the claim it supports.</small></li>
+            <li><strong>An answer</strong><small>Or an honest “not enough”.</small></li>
           </ol>
         </div>
       </section>
@@ -171,7 +171,7 @@
         <div class="container reveal">
           <header class="risk-heading">
             <div>
-              <p class="project-index">03 / Workflow layer</p>
+              <p class="project-index">Workflow layer / where it meets the work</p>
               <h2 id="project-risk-title">Second Line<br />Risk Copilot</h2>
             </div>
             <div>
@@ -186,6 +186,7 @@
             </figure>
             <div class="risk-workflow">
               <p>From obligation to opinion</p>
+              <p class="hand-note risk-hand-note">The copilot proposes. The second line still challenges.</p>
               <ol>
                 <li><span>Obligation</span><i>What must be true?</i></li>
                 <li><span>Risk &amp; control</span><i>What can fail—and how is it constrained?</i></li>
@@ -204,9 +205,9 @@
           <div class="section-intro split-intro">
             <div>
               <p class="kicker">Selected work</p>
-              <h2>Older projects, still part of the story.</h2>
+              <h2>Work beyond the current AI thread.</h2>
             </div>
-            <p>These projects show the technical ground underneath my current work: learning from messy data, modelling relationships and designing systems that have to communicate.</p>
+            <p>Recent research and engineering work that shows the ground underneath my current direction: learning from messy data, modelling relationships and designing systems that have to communicate.</p>
           </div>
           <div class="selected-showcase">
             <article class="work-piece work-piece-main">
@@ -256,7 +257,7 @@
           <ol class="timeline">
             <li>
               <span class="timeline-period">2026 — now</span>
-              <div><p class="timeline-place">Luxembourg</p><h3>ICT Risk &amp; AI</h3><p>Cybersecurity, ICT risk, regulatory technology and practical AI applications in European financial services.</p></div>
+              <div><p class="timeline-place">Luxembourg · European headquarters</p><h3>IT Security &amp; AI</h3><p>At the European headquarters of an international bank, responsible for IT security and AI work across 13 banking entities.</p></div>
             </li>
             <li>
               <span class="timeline-period">2024 — 2026</span>
