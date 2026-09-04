@@ -3,123 +3,333 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Daniel Lee is a software engineer building practical AI systems for FinTech, regulatory technology and ICT risk." />
-    <meta property="og:title" content="Daniel Lee — AI · FinTech · RegTech" />
-    <meta property="og:description" content="Practical AI systems, regulatory knowledge and ICT-risk workflows." />
+    <meta name="description" content="Li Da is a software engineer building at the intersection of AI, data and financial systems." />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta property="og:title" content="Li Da — Software Engineer" />
+    <meta property="og:description" content="Building practical systems across AI, data, FinTech and ICT risk." />
     <meta property="og:type" content="website" />
-    <title>Daniel Lee — AI · FinTech · RegTech</title>
+    <meta property="og:url" content="https://lida.today" />
+    <meta property="og:image" content="https://lida.today/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Li Da — Software Engineer" />
+    <meta name="twitter:description" content="Building practical systems across AI, data, FinTech and ICT risk." />
+    <meta name="twitter:image" content="https://lida.today/assets/og.png" />
+    <title>Li Da — Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-nav">
       <div class="container nav-inner">
-        <a class="brand" href="#home" aria-label="Daniel Lee — home"><img src="assets/logo.svg" alt="Daniel Lee" /><span>Daniel Lee</span></a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <a class="brand" href="#about" aria-label="Li Da — home">
+          <img src="assets/logo.svg" alt="" />
+          <span>Li Da</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-controls="siteNav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <nav class="site-links" id="siteNav" aria-label="Main navigation">
-          <a href="#home">Home</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="https://liyouqi.github.io/" target="_blank" rel="noopener">Blog ↗</a><a href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub ↗</a><a href="#contact">Contact</a>
+          <div class="nav-primary">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#writing">Writing</a>
+            <a href="#about">About</a>
+          </div>
+          <div class="nav-secondary">
+            <a href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/da-l-04901483" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
         </nav>
-        <button id="themeToggle" aria-label="Switch to light theme" title="Switch theme">☼</button>
+        <button id="themeToggle" aria-label="Switch to light theme" title="Switch theme"><span aria-hidden="true">☼</span></button>
       </div>
     </header>
 
-    <main>
-      <section id="home" class="hero section">
+    <main id="main">
+      <section id="about" class="hero section">
         <div class="container hero-grid reveal">
           <div class="hero-copy">
-            <img class="profile-photo" src="assets/avatar.jpg" alt="Portrait of Daniel Lee" />
-            <p class="eyebrow">Daniel Lee</p>
-            <h1>Building AI systems for <span>RegTech, FinTech &amp; ICT Risk.</span></h1>
-            <p class="hero-role">Software Engineer · AI Builder · FinTech</p>
-            <p class="lede">I build practical AI systems that turn complex regulatory and risk information into searchable knowledge, traceable answers and executable workflows.</p>
-            <div class="cta"><a class="btn primary" href="#projects">View projects <span>↓</span></a><a class="btn secondary" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Read my blog ↗</a></div>
+            <p class="identity"><span class="status-dot" aria-hidden="true"></span> Li Da · Luxembourg</p>
+            <h1>Software Engineer building at the intersection of <span>AI, data and financial systems.</span></h1>
+            <p class="lede">I’ve spent more than a decade building software across mobile products, enterprise systems and digital transformation. More recently, my work has moved toward FinTech, AI and ICT risk—exploring how complex regulatory information can become usable software.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">View my work <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Writing <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="portrait-wrap">
+            <div class="portrait-frame">
+              <img class="profile-photo" src="assets/avatar.jpg" alt="Li Da in the mountains" />
+            </div>
+            <figcaption><span>Software</span><span>AI</span><span>Financial systems</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="work" class="section building-section">
+        <div class="container reveal">
+          <div class="section-intro split-intro">
+            <div>
+              <p class="kicker">Currently building</p>
+              <h2>From regulation to decisions.</h2>
+            </div>
+            <p>I’m exploring how regulatory information can move from raw legal text to structured knowledge, evidence-grounded AI and eventually executable risk workflows.</p>
+          </div>
+          <div class="build-origin"><span>Input</span><strong>European regulation</strong><i aria-hidden="true">↓</i></div>
+          <ol class="build-flow" aria-label="Product progression from knowledge to action">
+            <li>
+              <span class="flow-number">01</span>
+              <div>
+                <span class="flow-layer">Knowledge layer</span>
+                <h3>Regulatory Knowledge Platform</h3>
+                <p>Make source material structured and explorable.</p>
+              </div>
+            </li>
+            <li>
+              <span class="flow-number">02</span>
+              <div>
+                <span class="flow-layer">Intelligence layer</span>
+                <h3>Regulatory RAG</h3>
+                <p>Find evidence and answer with traceable citations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="flow-number">03</span>
+              <div>
+                <span class="flow-layer">Workflow layer</span>
+                <h3>Second Line Risk Copilot</h3>
+                <p>Turn obligations into structured risk work.</p>
+              </div>
+            </li>
+          </ol>
+          <p class="build-thesis"><span>Raw regulation</span><i aria-hidden="true">→</i><span>Structured knowledge</span><i aria-hidden="true">→</i><span>Evidence</span><i aria-hidden="true">→</i><span>Decision workflow</span></p>
+        </div>
+      </section>
+
+      <section class="project-section section" aria-labelledby="project-platform-title">
+        <div class="container project-row reveal">
+          <figure class="project-visual visual-blue">
+            <img src="assets/projects/knowledgegraph1.jpg" alt="A network visualisation representing linked regulatory information" />
+            <figcaption><span>01 · Knowledge layer</span><span>Structured legal relationships</span></figcaption>
+          </figure>
+          <article class="project-copy">
+            <p class="project-index">Project 01</p>
+            <h2 id="project-platform-title">Regulatory Knowledge Platform</h2>
+            <p class="project-subtitle">Turning fragmented regulatory texts into structured, explorable knowledge.</p>
+            <div class="project-reasoning">
+              <div><span>Problem</span><p>Official regulatory material is authoritative, but fragmented across documents, articles, recitals and amendments.</p></div>
+              <div><span>Approach</span><p>I’m building a knowledge layer around official European sources, document structure, metadata and legal relationships.</p></div>
+              <div><span>Key design choices</span><p>Structured documents · article and recital navigation · linked legal sources · traceability</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://platform.lida.today" target="_blank" rel="noopener">Explore platform <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section section project-alt" aria-labelledby="project-rag-title">
+        <div class="container project-row project-row-reverse reveal">
+          <figure class="project-visual visual-dark">
+            <img src="assets/projects/rag.png" alt="Diagram showing documents, retrieval, a vector database and a user query in a RAG system" />
+            <figcaption><span>02 · Intelligence layer</span><span>Evidence before generation</span></figcaption>
+          </figure>
+          <article class="project-copy">
+            <p class="project-index">Project 02</p>
+            <h2 id="project-rag-title">Regulatory RAG</h2>
+            <p class="project-subtitle">Evidence-grounded regulatory question answering.</p>
+            <div class="mini-pipeline" aria-label="Regulatory RAG pipeline">
+              <span>Question</span><i>→</i><span>Plan</span><i>→</i><span>Claims</span><i>→</i><span>Retrieve</span><i>→</i><span>Evidence</span><i>→</i><span>Answer</span>
+            </div>
+            <div class="project-reasoning">
+              <div><span>Problem</span><p>Simple semantic search breaks down when a regulatory question contains multiple claims or requires evidence from several sources.</p></div>
+              <div><span>Approach</span><p>Decompose the question, retrieve evidence for each claim, then constrain generation to the material that was actually found.</p></div>
+              <div><span>Key design choices</span><p>Hybrid retrieval · claim-level evidence · citation-bound answers · transparent failure</p></div>
+            </div>
+            <div class="project-actions">
+              <span class="button button-disabled" aria-label="Regulatory RAG demo is in progress">Demo in progress</span>
+              <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section section" aria-labelledby="project-risk-title">
+        <div class="container project-row reveal">
+          <figure class="project-visual visual-orange">
+            <img src="assets/projects/security-agent.jpg" alt="Information security risk dashboard with risk ratings, heat map and action plan progress" />
+            <figcaption><span>03 · Workflow layer</span><span>Structured risk assessment</span></figcaption>
+          </figure>
+          <article class="project-copy">
+            <p class="project-index">Project 03</p>
+            <h2 id="project-risk-title">Second Line Risk Copilot</h2>
+            <p class="project-subtitle">Turning regulatory obligations into structured ICT risk workflows.</p>
+            <div class="mini-pipeline" aria-label="ICT risk assessment workflow">
+              <span>Obligation</span><i>→</i><span>Risk</span><i>→</i><span>Control</span><i>→</i><span>Metric</span><i>→</i><span>Challenge</span><i>→</i><span>Assessment</span>
+            </div>
+            <div class="project-reasoning">
+              <div><span>Problem</span><p>Regulatory obligations rarely arrive in the shape of a usable control, metric or assessment workflow.</p></div>
+              <div><span>Approach</span><p>An experiment in bringing regulatory evidence, risk reasoning and structured second-line assessment into one workflow.</p></div>
+              <div><span>Key design choices</span><p>Evidence-linked reasoning · control objectives · KPI / KRI · human review and challenge</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="button button-secondary" href="https://github.com/liyouqi/Governance-Agent-Platform" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section selected-section">
+        <div class="container reveal">
+          <div class="section-intro">
+            <p class="kicker">Selected work</p>
+            <h2>Earlier work across data, graphs and systems.</h2>
+          </div>
+          <div class="work-list">
+            <a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">
+              <span><strong>Ethereum Network Analysis</strong><small>Network science · graph analytics</small></span><i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://liyouqi.github.io/data%20mining/Market-Fear-Regime-Identification-03/" target="_blank" rel="noopener">
+              <span><strong>Market Regime Identification</strong><small>Data mining · financial markets</small></span><i aria-hidden="true">↗</i>
+            </a>
+            <a href="http://www.bhome.com.cn/en/manu/#industrial" target="_blank" rel="noopener">
+              <span><strong>Cyber-Physical Systems</strong><small>Distributed systems · IoT</small></span><i aria-hidden="true">↗</i>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section featured-section">
+      <section id="experience" class="section experience-section">
         <div class="container reveal">
-          <div class="section-heading">
-            <p class="kicker">Featured AI projects</p>
-            <h2>AI products for complex, high-accountability work.</h2>
-            <p>Current product directions are shown with their intended workflows. Links will be added when public demos, repositories or architecture notes are ready.</p>
+          <div class="section-intro split-intro">
+            <div><p class="kicker">Experience</p><h2>A career built in layers.</h2></div>
+            <p>Software engineering led to enterprise transformation, deeper study in data and FinTech, and now practical work around ICT risk and regulatory AI.</p>
           </div>
-          <div class="featured-grid">
-            <article class="feature-card platform-card">
-              <div class="card-meta">RegTech · Knowledge platform</div>
-              <img class="feature-cover" src="assets/projects/knowledgegraph1.jpg" alt="Network visualisation for a regulatory knowledge graph" />
-              <h3>Regulatory Knowledge Platform</h3>
-              <p>Building a traceable regulatory knowledge layer for European financial regulation—organising regulations, articles, metadata and legal relationships into a structured, explorable system.</p>
-              <ul class="tag-list"><li>EUR-Lex</li><li>Knowledge graph</li><li>Article / recital</li><li>Evidence</li></ul>
-              <div class="project-actions"><a class="project-button" href="https://platform.lida.today" target="_blank" rel="noopener">View Platform ↗</a></div>
+          <ol class="timeline">
+            <li>
+              <span class="timeline-period">2026 — now</span>
+              <div><p class="timeline-place">Luxembourg</p><h3>ICT Risk &amp; AI</h3><p>Cybersecurity, ICT risk, regulatory technology and practical AI applications in European financial services.</p></div>
+            </li>
+            <li>
+              <span class="timeline-period">2024 — 2026</span>
+              <div><p class="timeline-place">France · Italy</p><h3>Computer Science &amp; FinTech</h3><p>Graduate study focused on computer science, data, financial technology and applied machine learning.</p></div>
+            </li>
+            <li>
+              <span class="timeline-period">2018 — 2023</span>
+              <div><p class="timeline-place">China</p><h3>Digital Transformation</h3><p>Enterprise systems, SaaS workflows, backend platforms and technical leadership.</p></div>
+            </li>
+            <li>
+              <span class="timeline-period">2011 — 2018</span>
+              <div><p class="timeline-place">Shenzhen · Changsha</p><h3>Software Engineering</h3><p>Mobile products, internet applications, backend services and client/server systems.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section tools-section">
+        <div class="container reveal">
+          <div class="section-intro split-intro">
+            <div><p class="kicker">Tools I work with</p><h2>A practical, evolving toolkit.</h2></div>
+            <p>Grouped by where I use them—not as a claim to know every tool equally.</p>
+          </div>
+          <div class="tool-groups">
+            <article class="tool-group">
+              <div><span>01</span><h3>AI &amp; Data</h3></div>
+              <ul class="icon-wall">
+                <li><img src="assets/icons/python.svg" alt="" /><span>Python</span></li>
+                <li><img src="assets/icons/fastapi.svg" alt="" /><span>FastAPI</span></li>
+                <li><img src="assets/icons/pandas.svg" alt="" /><span>Pandas</span></li>
+                <li><img src="assets/icons/numpy.svg" alt="" /><span>NumPy</span></li>
+                <li><img src="assets/icons/scikitlearn.svg" alt="" /><span>Scikit-learn</span></li>
+              </ul>
             </article>
-            <article class="feature-card rag-card">
-              <div class="card-meta">RAG · LLM · Regulatory AI</div>
-              <img class="feature-cover" src="assets/projects/rag2.webp" alt="Retrieval-augmented generation workflow" />
-              <h3>Regulatory RAG</h3>
-              <p>An evidence-grounded regulatory question-answering system combining query planning, claim decomposition, hybrid retrieval and citation-bound LLM answers.</p>
-              <ul class="tag-list"><li>Query planner</li><li>BM25 + vectors</li><li>Hybrid retrieval</li><li>Citations</li></ul>
-              <div class="project-actions"><a class="project-button" href="https://github.com/liyouqi" target="_blank" rel="noopener">View GitHub ↗</a></div>
+            <article class="tool-group">
+              <div><span>02</span><h3>Backend &amp; Systems</h3></div>
+              <ul class="icon-wall">
+                <li><img src="assets/icons/java.svg" alt="" /><span>Java</span></li>
+                <li><img src="assets/icons/springboot.svg" alt="" /><span>Spring</span></li>
+                <li><img src="assets/icons/mysql.svg" alt="" /><span>MySQL</span></li>
+                <li><img src="assets/icons/mongodb.svg" alt="" /><span>MongoDB</span></li>
+                <li><img src="assets/icons/docker.svg" alt="" /><span>Docker</span></li>
+                <li><img src="assets/icons/linux.svg" alt="" /><span>Linux</span></li>
+              </ul>
             </article>
-            <article class="feature-card risk-card">
-              <div class="card-meta">AI agent · ICT risk · DORA</div>
-              <img class="feature-cover" src="assets/projects/security-agent.jpg" alt="Information-security risk management dashboard" />
-              <h3>Second Line Risk Copilot</h3>
-              <p>An AI-assisted workflow for second-line ICT-risk assessment that converts regulatory obligations into risks, control objectives, metrics, challenge activities and structured assessment outputs.</p>
-              <ul class="tag-list"><li>DORA</li><li>Control objectives</li><li>KPI / KRI</li><li>Assessment</li></ul>
-              <div class="project-actions"><a class="project-button" href="https://github.com/liyouqi" target="_blank" rel="noopener">View GitHub ↗</a></div>
+            <article class="tool-group">
+              <div><span>03</span><h3>Web</h3></div>
+              <ul class="icon-wall">
+                <li><img src="assets/icons/javascript.svg" alt="" /><span>JavaScript</span></li>
+                <li><img src="assets/icons/typescript.svg" alt="" /><span>TypeScript</span></li>
+                <li><img src="assets/icons/react.svg" alt="" /><span>React</span></li>
+                <li><img src="assets/icons/html5.svg" alt="" /><span>HTML</span></li>
+                <li><img src="assets/icons/css3.svg" alt="" /><span>CSS</span></li>
+              </ul>
+            </article>
+            <article class="tool-group">
+              <div><span>04</span><h3>Cloud &amp; Engineering</h3></div>
+              <ul class="icon-wall">
+                <li><img src="assets/icons/git.svg" alt="" /><span>Git</span></li>
+                <li><img src="assets/icons/googlecloud.svg" alt="" /><span>GCP</span></li>
+                <li><img src="assets/icons/aws.svg" alt="" /><span>AWS</span></li>
+              </ul>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section id="research" class="section section-alt">
-        <div class="container reveal">
-          <div class="section-heading row-heading"><div><p class="kicker">Selected work &amp; research</p><h2>Earlier projects that show technical range.</h2></div><p>Research and engineering work across financial data, distributed systems and analytics.</p></div>
-          <div class="research-grid">
-            <article class="research-card"><img src="assets/projects/3-multiasset-cluster-centers.png" alt="Multi-asset market regime visualisation" /><div><p>Data mining</p><h3>Market Regime Identification</h3><a href="https://liyouqi.github.io/market-regime-identification/" target="_blank" rel="noopener">View project ↗</a></div></article>
-            <article class="research-card"><img src="assets/projects/datamining.png" alt="Data-mining visualisation" /><div><p>Network analysis</p><h3>Ethereum Network Analysis</h3><a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">View project ↗</a></div></article>
-            <article class="research-card"><img src="assets/projects/microservices.png" alt="Diagram for a cyber-physical system" /><div><p>System design</p><h3>Cyber-Physical Systems</h3><a href="http://www.bhome.com.cn/en/manu/#industrial" target="_blank" rel="noopener">View reference ↗</a></div></article>
+          <div class="earlier-tools">
+            <span>Earlier technologies</span>
+            <ul>
+              <li><img src="assets/icons/ios.svg" alt="" />iOS</li>
+              <li><img src="assets/icons/flutter.svg" alt="" />Flutter</li>
+              <li><img src="assets/icons/apachehadoop.svg" alt="" />Hadoop</li>
+              <li><img src="assets/icons/apachespark.svg" alt="" />Spark</li>
+              <li><img src="assets/icons/cocos2d.svg" alt="" />Cocos2d</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="section">
+      <section id="writing" class="section writing-section">
         <div class="container reveal">
-          <div class="section-heading"><p class="kicker">Experience</p><h2>From software engineering to AI, risk and regulated systems.</h2></div>
-          <div class="experience-list">
-            <article class="experience-item"><span class="experience-period">Now</span><div><h3>ICT Risk, Cybersecurity &amp; FinTech</h3><p>Working in a European financial-services context across ICT risk, cybersecurity, vulnerability management, monitoring, risk controls and AI applications—without exposing confidential systems or data.</p></div></article>
-            <article class="experience-item"><span class="experience-period">2021 – 2023</span><div><h3>Digital Technology &amp; Enterprise Systems</h3><p>Delivered backend and data integration for enterprise platforms, ERP/SaaS workflows, microservices and operational business systems in a digital-transformation environment.</p></div></article>
-            <article class="experience-item"><span class="experience-period">2014 – 2021</span><div><h3>Software Engineering</h3><p>Built backend services, APIs, distributed systems and client/server products across mobile gaming and internet platforms.</p></div></article>
-            <article class="experience-item"><span class="experience-period">Europe</span><div><h3>Computer Science &amp; FinTech</h3><p>Continued technical study in Data and FinTech, extending an engineering foundation into data science, AI and financial innovation.</p></div></article>
+          <div class="section-intro split-intro">
+            <div><p class="kicker">Writing</p><h2>Notes from learning and building.</h2></div>
+            <p>Long-form thinking about regulatory technology, cybersecurity, AI engineering and network science.</p>
           </div>
+          <div class="writing-list">
+            <a href="https://liyouqi.github.io/cybersecurity/Learning-Dora-4-zh/" target="_blank" rel="noopener">
+              <span class="writing-meta">DORA · ICT risk</span><strong>Learning DORA 04</strong><p>Vulnerability remediation, ownership and accountability.</p><i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://liyouqi.github.io/data%20mining/Market-Fear-Regime-Identification-03/" target="_blank" rel="noopener">
+              <span class="writing-meta">Data · Financial markets</span><strong>Market Fear Regime Identification</strong><p>Clustering and network analysis across market regimes.</p><i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://liyouqi.github.io/ai/no-gpu-deep-learning-engineering-guide-2025/" target="_blank" rel="noopener">
+              <span class="writing-meta">AI · Engineering</span><strong>Working Without a GPU</strong><p>A practical guide to deep-learning work with constrained compute.</p><i aria-hidden="true">↗</i>
+            </a>
+          </div>
+          <a class="text-link writing-more" href="https://liyouqi.github.io/" target="_blank" rel="noopener">View all writing <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
-      <section id="technologies" class="section technologies-section">
-        <div class="container reveal">
-          <div class="section-heading"><p class="kicker">Core technologies</p><h2>A focused toolkit for AI systems and dependable delivery.</h2></div>
-          <div class="technology-grid">
-            <article><div class="tech-icons"><img src="assets/icons/python.svg" alt="" /><img src="assets/icons/scikitlearn.svg" alt="" /><img src="assets/icons/blockchaindotcom.svg" alt="" /></div><h3>AI &amp; LLM</h3><p>LLM APIs · RAG · LangGraph · Hybrid retrieval · Embeddings · AI agents</p></article>
-            <article><div class="tech-icons"><img src="assets/icons/java.svg" alt="" /><img src="assets/icons/springboot.svg" alt="" /><img src="assets/icons/fastapi.svg" alt="" /></div><h3>Backend</h3><p>Python · FastAPI · Java · Spring · REST APIs · Microservices</p></article>
-            <article><div class="tech-icons"><img src="assets/icons/mysql.svg" alt="" /><img src="assets/icons/pandas.svg" alt="" /><img src="assets/icons/numpy.svg" alt="" /></div><h3>Data</h3><p>PostgreSQL · MySQL · Pandas · Scikit-learn · Knowledge graphs</p></article>
-            <article><div class="tech-icons"><img src="assets/icons/docker.svg" alt="" /><img src="assets/icons/git.svg" alt="" /><img src="assets/icons/googlecloud.svg" alt="" /></div><h3>Platform</h3><p>Docker · Git · Linux · Google Cloud · CI/CD</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="writing-section">
-        <div class="container writing-inner reveal"><p class="kicker">Writing</p><h2>I write about AI, regulatory technology, cybersecurity, network science and the things I learn while building.</h2><a class="text-arrow" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Read the blog <span>→</span></a></div>
-      </section>
-
-      <section id="contact" class="contact-section">
+      <section class="contact-section">
         <div class="container contact-inner reveal">
-          <p class="kicker">Contact</p><h2>Interested in AI, FinTech, RegTech or practical systems for complex information?</h2><p>Feel free to reach out.</p>
-          <div class="contact-actions"><a class="btn primary" href="https://www.linkedin.com/in/da-l-04901483" target="_blank" rel="noopener">Connect on LinkedIn <span>↗</span></a><a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+          <p class="kicker">Contact</p>
+          <h2>Let’s talk.</h2>
+          <p>Interested in AI, FinTech, RegTech or building practical systems around complex information?</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/da-l-04901483" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="container"><span>© <span id="year"></span> Daniel Lee</span><span>AI · FinTech · RegTech</span></div></footer>
+    <footer class="site-footer">
+      <div class="container">
+        <div><strong>Li Da</strong><span>Software · AI · Financial systems</span></div>
+        <span>© <span id="year"></span></span>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

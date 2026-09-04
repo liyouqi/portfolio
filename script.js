@@ -11,12 +11,14 @@ function closeNavigation() {
   if (!siteNav || !navToggle) return;
   siteNav.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Open navigation');
 }
 
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
     const open = siteNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   });
   siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNavigation));
 }
@@ -25,7 +27,7 @@ if (localStorage.getItem('theme') === 'light') root.classList.add('light');
 
 function updateThemeButton() {
   const isLight = root.classList.contains('light');
-  themeButton.textContent = isLight ? '◐' : '☼';
+  themeButton.querySelector('span').textContent = isLight ? '◐' : '☼';
   themeButton.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
 }
 
