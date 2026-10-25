@@ -3,7 +3,6 @@ const siteNav = document.getElementById('siteNav');
 const themeButton = document.getElementById('themeToggle');
 const root = document.documentElement;
 const yearNode = document.getElementById('year');
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (yearNode) yearNode.textContent = new Date().getFullYear();
 
@@ -23,7 +22,9 @@ if (navToggle && siteNav) {
   siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNavigation));
 }
 
-if (localStorage.getItem('theme') === 'light') root.classList.add('light');
+try {
+  if (localStorage.getItem('theme') === 'light') root.classList.add('light');
+} catch { /* Keep navigation and content usable when storage is unavailable. */ }
 
 function updateThemeButton() {
   const isLight = root.classList.contains('light');
@@ -35,23 +36,13 @@ if (themeButton) {
   updateThemeButton();
   themeButton.addEventListener('click', () => {
     root.classList.toggle('light');
-    localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+    try {
+      localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+    } catch { /* Theme still works for this page visit. */ }
     updateThemeButton();
   });
 }
 
-const revealItems = document.querySelectorAll('.reveal');
-if (reducedMotion || !('IntersectionObserver' in window)) {
-  revealItems.forEach((element) => element.classList.add('is-visible'));
-} else {
-  const observer = new IntersectionObserver(
-    (entries, currentObserver) => entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        currentObserver.unobserve(entry.target);
-      }
-    }),
-    { threshold: 0.12 },
-  );
-  revealItems.forEach((element) => observer.observe(element));
-}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeNavigation();
+});

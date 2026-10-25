@@ -17,6 +17,8 @@
     <meta name="twitter:description" content="Practical software for complex, regulated work across AI, data and financial systems." />
     <meta name="twitter:image" content="https://lida.today/assets/og-v2.png" />
     <title>Li Da — Software Engineer</title>
+    <link rel="canonical" href="https://lida.today/" />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,7 +37,7 @@
           <div class="nav-primary">
             <a href="#work">Work</a>
             <a href="#experience">Experience</a>
-            <a href="#writing">Writing</a>
+            <a href="https://liyouqi.github.io/">Blog</a>
             <a href="#about">About</a>
           </div>
           <div class="nav-secondary">
@@ -49,14 +51,15 @@
 
     <main id="main">
       <section id="about" class="hero section">
-        <div class="container hero-grid reveal">
+        <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="identity"><span class="status-dot" aria-hidden="true"></span> Li Da · Luxembourg</p>
+            <p class="identity">Li Da · Luxembourg</p>
             <h1>I build software where <span>AI, data and financial systems</span> meet.</h1>
-            <p class="lede">I’ve spent more than a decade building software across mobile products, enterprise systems and digital transformation. More recently, my work has moved toward FinTech, AI and ICT risk—exploring how complex regulatory information can become usable software.</p>
+            <p class="lede">I’m a software engineer with 10+ years in enterprise systems, backend development and technical leadership. Today I build AI and data tools for financial and regulatory work, drawing on that experience to make complex systems usable.</p>
+            <p class="hero-background">My earlier work spans mobile and education products, enterprise platforms and development-team leadership. Graduate study in France and Italy brought me further into data science and FinTech; my current projects build on that engineering background.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">View my work <span aria-hidden="true">↓</span></a>
-              <a class="text-link" href="https://liyouqi.github.io/" target="_blank" rel="noopener">Writing <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#work">View my work <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="https://liyouqi.github.io/">Blog</a>
               <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
             </div>
           </div>
@@ -64,303 +67,178 @@
             <div class="portrait-frame">
               <img class="profile-photo" src="assets/avatar.jpg" alt="Li Da in the mountains" />
             </div>
-            <figcaption><span>Software</span><span>AI</span><span>Financial systems</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section id="work" class="section building-section">
-        <div class="container reveal">
-          <div class="section-intro split-intro">
-            <div>
-              <p class="kicker">Currently building</p>
-              <h2>From regulation to decisions.</h2>
-            </div>
-            <p>I’m exploring how regulatory information can move from raw legal text to structured knowledge, evidence-grounded AI and eventually executable risk workflows.</p>
+        <div class="container">
+          <div class="section-intro">
+            <h2>Currently building</h2>
+            <p>My current work is in regulatory software. These projects cover the source material, evidence retrieval and the review workflow.</p>
           </div>
-          <div class="build-origin"><span>Input</span><strong>European regulation</strong><i aria-hidden="true">↓</i></div>
-          <ol class="build-flow" aria-label="Product progression from knowledge to action">
-            <li>
-              <span class="flow-cue">make sense of it</span>
-              <div>
-                <span class="flow-layer">Knowledge layer</span>
-                <h3>Regulatory Knowledge Platform</h3>
-                <p>Make source material structured and explorable.</p>
-              </div>
-            </li>
-            <li>
-              <span class="flow-cue">ask it properly</span>
-              <div>
-                <span class="flow-layer">Intelligence layer</span>
-                <h3>Regulatory RAG</h3>
-                <p>Find evidence and answer with traceable citations.</p>
-              </div>
-            </li>
-            <li>
-              <span class="flow-cue">put it to work</span>
-              <div>
-                <span class="flow-layer">Workflow layer</span>
-                <h3>Second Line Risk Copilot</h3>
-                <p>Turn obligations into structured risk work.</p>
-              </div>
-            </li>
+          <ol class="project-directory" aria-label="Knowledge, intelligence and workflow projects">
+            <li><span>Knowledge</span><a href="#project-platform-title">Regulatory Knowledge Platform</a><p>Structured laws and source references.</p></li>
+            <li><span>Intelligence</span><a href="#project-rag-title">Regulatory RAG</a><p>Questions answered against retrieved evidence.</p></li>
+            <li><span>Workflow</span><a href="#project-risk-title">Second Line Risk Copilot</a><p>Risk assessments with human review.</p></li>
           </ol>
-          <p class="build-thesis"><span>Raw regulation</span><i aria-hidden="true">→</i><span>Structured knowledge</span><i aria-hidden="true">→</i><span>Evidence</span><i aria-hidden="true">→</i><span>Decision workflow</span></p>
         </div>
       </section>
 
       <section class="project-story project-one section" aria-labelledby="project-platform-title">
-        <div class="container reveal">
+        <div class="container">
           <header class="project-title-block">
-            <p class="project-index">Knowledge layer / where it starts</p>
-            <h2 id="project-platform-title">Regulatory<br />Knowledge Platform</h2>
-            <p>Turning fragmented regulatory texts into structured, explorable knowledge.</p>
+            <h2 id="project-platform-title">Regulatory Knowledge Platform</h2>
+            <p>A reader and search tool for European financial regulation.</p>
           </header>
           <div class="platform-layout">
-            <figure class="project-visual platform-visual">
-              <img src="assets/projects/knowledgegraph1.jpg" alt="A network visualisation representing linked regulatory information" />
-              <figcaption><span>Linked source material</span><span>Documents · Articles · Recitals · Relationships</span></figcaption>
+            <div class="platform-evidence">
+            <figure class="project-visual platform-visual screenshot-visual">
+              <a href="assets/projects/platform-reader.webp" target="_blank" rel="noopener" aria-label="Open full-size Regulatory Knowledge Platform screenshot">
+                <img src="assets/projects/platform-reader.webp" width="1280" height="820" loading="lazy" alt="DORA Article 28 in the Reader, with an Article 6 reference preview and linked provisions" />
+              </a>
+              <figcaption>DORA Article 28, with a linked provision open. <a href="assets/projects/platform-reader.webp" target="_blank" rel="noopener">View full size</a></figcaption>
             </figure>
-            <aside class="platform-notes" aria-label="Platform design notes">
-              <p class="margin-note">Before asking a model anything, I want to know what the source is—and how the pieces relate.</p>
-              <div class="platform-note-stack">
-                <div class="platform-note"><span>I start with the source</span><p>Official European material and provenance stay close to every record.</p></div>
-                <div class="platform-note"><span>Then I give it a shape</span><p>Articles, recitals, metadata and amendments become connected objects.</p></div>
-                <div class="platform-note"><span>So it stays navigable</span><p>You can move through the law without losing the document around it.</p></div>
-              </div>
+            <div class="source-engineering">
+              <h3>From source files to a shared runtime</h3>
+              <p>Official material is downloaded and parsed before serving. Structured canonical documents are compiled into a read-only SQLite runtime, so the Reader, search and downstream tools use the same source representation. Publisher notes and editorial annotations stay separate from legal text.</p>
+            </div>
+            </div>
+            <div class="platform-notes">
+              <p>I built the Reader around articles, recitals and references, keeping the official source close to the text. The same canonical data serves the website, REST API, MCP tools and RAG exports.</p>
+              <p>Reading and search work without a model. You can open a law by article, search definitions, follow explicit references and inspect related measures. Reviewed legal relationships are distinguished from metadata and similarity links.</p>
+              <h3>Multi-turn context and memory</h3>
+              <p>The Reader Copilot keeps a separate conversation for each document. Recent turns travel with the current provision and selected text; threads persist locally in IndexedDB. Switching documents restores the right thread, with cancelled loads prevented from overwriting the new context.</p>
+              <p>Memory is bounded: up to 20 document threads and 40 messages per thread, with the latest eight turns sent as context. Stored responses are schema-checked before reuse; the conversation stays usable in memory when browser storage is unavailable.</p>
+              <h3>Citation consistency</h3>
+              <p>Evidence follows the Reader’s canonical content order, including nested clauses. That avoids a subtle error: joining a parent paragraph and its children in an order the source never used.</p>
               <div class="project-actions">
-                <a class="button button-primary" href="https://platform.lida.today" target="_blank" rel="noopener">Explore platform <span aria-hidden="true">↗</span></a>
-                <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://platform.lida.today" target="_blank" rel="noopener">Open platform</a>
+                <a class="text-link" href="https://github.com/liyouqi/regulatory-knowledge-platform" target="_blank" rel="noopener">Source code</a>
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="project-story project-two section" aria-labelledby="project-rag-title">
-        <div class="container reveal">
+        <div class="container">
           <div class="rag-layout">
             <article class="rag-copy">
-              <p class="project-index">Intelligence layer / where it gets useful</p>
               <h2 id="project-rag-title">Regulatory RAG</h2>
-              <p class="project-subtitle">Evidence-grounded regulatory question answering.</p>
-              <p class="project-lead">A good answer is not the starting point. The difficult part is deciding what the question is really asking, finding evidence for each claim and making uncertainty visible.</p>
-              <blockquote>I don’t want the model to sound confident. I want it to show its work.</blockquote>
+              <p>A regulatory question can contain several obligations, exceptions and conditions. My retrieval pipeline separates those claims, finds supporting provisions and checks coverage before composing an answer.</p>
+              <p>I don’t want the model to sound confident. I want it to show its work.</p>
+              <p>The planner produces a structured retrieval plan; the engine executes it without model calls. Each claim gets its own allowed evidence IDs. Citation validation and a deterministic coverage guard keep unsupported statements out of the final summary, while leaving partial answers visibly incomplete.</p>
+              <h3>Retrieval and evidence coverage</h3>
+              <p>Keyword and dense retrieval generate candidates. Claim-aware reranking then looks for provisions that can answer the question, while structural expansion recovers parent clauses, list items and relevant cross-references. An isolated sentence can otherwise miss the condition that changes its meaning.</p>
               <div class="project-actions">
-                <span class="button button-disabled" aria-label="Regulatory RAG demo is in progress">Demo in progress</span>
-                <a class="text-link" href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="assets/projects/rag-demo.gif" target="_blank" rel="noopener">Watch the recorded demo</a>
               </div>
             </article>
-            <figure class="project-visual rag-visual">
-              <img src="assets/projects/rag.png" alt="Diagram showing documents, retrieval, a vector database and a user query in a RAG system" />
-              <figcaption><span>Retrieval system sketch</span><span>Evidence before generation</span></figcaption>
+            <div class="rag-evidence">
+            <figure class="project-visual rag-visual screenshot-visual">
+              <a href="assets/projects/rag-evidence.webp" target="_blank" rel="noopener" aria-label="Open full-size Regulatory RAG evidence screenshot">
+                <img src="assets/projects/rag-evidence.webp" width="1120" height="700" loading="lazy" alt="Regulatory RAG returning the official text and evidence ID for DORA Article 6(5) in offline extractive mode" />
+              </a>
+              <figcaption>DORA Article 6(5), retrieved in offline extractive mode using the legacy corpus.</figcaption>
             </figure>
+            <div class="source-engineering">
+              <h3>Corpus and index integrity</h3>
+              <p>Release manifests record source fingerprints and lock the corpus to its index. The activation pointer is written only after build checks pass; an invalid active release fails closed instead of silently switching to different material.</p>
+              <p>Evaluation tracks retrieval evidence by claim, separately from the generated answer. That makes a missed provision distinguishable from a generation or citation error.</p>
+            </div>
+            </div>
           </div>
-          <ol class="rag-path" aria-label="Regulatory RAG pipeline">
-            <li><strong>A real question</strong><small>Usually messier than it first looks.</small></li>
-            <li><strong>A plan</strong><small>Before reaching for embeddings.</small></li>
-            <li><strong>A few claims</strong><small>So each part can earn its evidence.</small></li>
-            <li><strong>Two kinds of search</strong><small>Because keywords still matter.</small></li>
-            <li><strong>Evidence</strong><small>Attached to the claim it supports.</small></li>
-            <li><strong>An answer</strong><small>Or an honest “not enough”.</small></li>
-          </ol>
+          <p class="technical-footnote">The standalone engine handles each question independently and is available through Python, CLI and HTTP interfaces. Conversation memory belongs to the Reader Copilot above; business workflow state belongs to the calling application.</p>
         </div>
       </section>
 
       <section class="project-story project-three section" aria-labelledby="project-risk-title">
-        <div class="container reveal">
-          <header class="risk-heading">
-            <div>
-              <p class="project-index">Workflow layer / where it meets the work</p>
-              <h2 id="project-risk-title">Second Line<br />Risk Copilot</h2>
-            </div>
-            <div>
-              <p class="project-subtitle">Turning regulatory obligations into structured ICT risk workflows.</p>
-              <p class="project-lead">An experiment in bringing regulatory evidence, risk reasoning and second-line challenge into one reviewable workflow—not automating away professional judgement.</p>
-            </div>
-          </header>
-          <div class="risk-layout">
-            <figure class="project-visual risk-visual">
-              <img src="assets/projects/security-agent.jpg" alt="Information security risk dashboard with risk ratings, heat map and action plan progress" />
-              <figcaption><span>Assessment view</span><span>Evidence · Controls · Challenge · Follow-up</span></figcaption>
-            </figure>
-            <div class="risk-workflow">
-              <p>From obligation to opinion</p>
-              <p class="hand-note risk-hand-note">The copilot proposes. The second line still challenges.</p>
-              <ol>
-                <li><span>Obligation</span><i>What must be true?</i></li>
-                <li><span>Risk &amp; control</span><i>What can fail—and how is it constrained?</i></li>
-                <li><span>Metric</span><i>What would reveal weakening performance?</i></li>
-                <li><span>Challenge</span><i>What evidence should the second line question?</i></li>
-                <li><span>Assessment</span><i>What can be concluded, with what caveats?</i></li>
-              </ol>
-              <a class="button button-secondary" href="https://github.com/liyouqi/Governance-Agent-Platform" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
-            </div>
+        <div class="container risk-article">
+          <div class="risk-copy">
+            <h2 id="project-risk-title">Second Line Risk Copilot</h2>
+            <p>A working prototype for DORA access-management reviews. It connects regulatory evidence to obligations, risks and monitoring metrics, then lets a reviewer accept, edit or reject the results.</p>
+            <p>I keep generated candidates and reviewer changes separate. Each edit belongs to a run and a candidate; the reviewed view combines them without overwriting the original evidence or output.</p>
+            <h3>Orchestration and shared state</h3>
+            <p>A LangGraph workflow coordinates source discovery, retrieval and generation through typed interfaces. Shared schemas carry evidence references across stages, and a final quality gate checks the links between obligations, risks, objectives and metrics.</p>
+            <h3>From generated output to reviewed work</h3>
+            <p>Accept, edit and reject decisions remain attached to the original candidates. Review completion includes warning acknowledgement, and the spreadsheet export carries the human decisions with the results. The interface also identifies live generation, deterministic generation and fixture fallbacks.</p>
+            <p>The prototype uses a lock-protected in-memory store. Multi-agent coordination and durable case memory are the next development steps; monitoring and follow-up preparation currently run as separate deterministic capabilities.</p>
+            <div class="project-actions"><a class="text-link" href="https://github.com/liyouqi/Governance-Agent-Platform" target="_blank" rel="noopener">Source code and workflow documentation</a></div>
           </div>
+          <aside class="review-sequence" aria-label="Risk review workflow">
+            <h3>A review follows this sequence</h3>
+            <ol>
+              <li><strong>Establish the source set</strong><p>The platform supplies scope and canonical context; RAG retrieves relevant provisions.</p></li>
+              <li><strong>Draft the assessment</strong><p>Resolve evidence, identify obligations and risks, then define monitoring objectives and metrics.</p></li>
+              <li><strong>Review and follow up</strong><p>Check links, record human decisions, and prepare reviewed exports and monitoring inputs.</p></li>
+            </ol>
+            <h3>Monitoring and follow-up</h3>
+            <p>CSV monitoring checks the input contract and compares two periods against reviewer-supplied thresholds. Challenge preparation records requested evidence; opinion drafting requires a human rating and basis. Follow-up drafts carry an action, owner and due date.</p>
+          </aside>
         </div>
       </section>
 
       <section class="section selected-section">
-        <div class="container reveal">
-          <div class="section-intro split-intro">
-            <div>
-              <p class="kicker">Selected work</p>
-              <h2>Work beyond the current AI thread.</h2>
-            </div>
-            <p>Recent research and engineering work that shows the ground underneath my current direction: learning from messy data, modelling relationships and designing systems that have to communicate.</p>
-          </div>
-          <div class="selected-showcase">
-            <article class="work-piece work-piece-main">
-              <a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">
-                <figure><img src="assets/projects/datamining.png" alt="Data-mining illustration used for the Ethereum network analysis series" /></figure>
-                <div class="work-piece-copy">
-                  <span class="work-meta">Network science · Graph analytics</span>
-                  <h3>Ethereum Network Analysis</h3>
-                  <p>A multi-part study of Ethereum transaction data—from preparation and descriptive statistics to graph construction, whales and MEV behaviour.</p>
-                  <small><strong>What interested me</strong> Turning raw transactions into a network that can be inspected, measured and questioned.</small>
-                  <i aria-hidden="true">View the series ↗</i>
-                </div>
-              </a>
+        <div class="container">
+          <div class="section-intro"><h2>Selected work</h2></div>
+          <div class="selected-list">
+            <article>
+              <h3><a href="work/cube-cloud/">Cube Cloud</a></h3>
+              <div><p class="work-meta">Enterprise systems · Java · Spring Cloud</p><p>Enterprise platform engineering across CRM, ERP, supply chain, warehousing and logistics. My work covered architecture, technology selection, engineering practice and delivery coordination.</p><p>The platform combined Java microservices, service discovery, caching and messaging with containerised delivery, CI/CD, centralised logs and tracing. My role connected those engineering choices with the development team’s day-to-day delivery.</p><a class="text-link" href="work/cube-cloud/">Read the case study</a></div>
             </article>
-            <article class="work-piece work-piece-side">
-              <a href="https://liyouqi.github.io/data%20mining/Market-Fear-Regime-Identification-03/" target="_blank" rel="noopener">
-                <figure><img src="assets/projects/3-multiasset-cluster-centers.png" alt="Scatter plot showing two market regime clusters and their centres" /></figure>
-                <div class="work-piece-copy">
-                  <span class="work-meta">Data mining · Financial markets</span>
-                  <h3>Market Regime Identification</h3>
-                  <p>Exploring whether cross-asset behaviour can reveal market fear regimes through dimensionality reduction, clustering and network structure.</p>
-                  <i aria-hidden="true">Read the project ↗</i>
-                </div>
-              </a>
-            </article>
-            <article class="work-piece work-piece-side">
-              <a href="http://www.bhome.com.cn/en/manu/#industrial" target="_blank" rel="noopener">
-                <figure><img src="assets/projects/microservices.png" alt="Microservices diagram connecting web and mobile clients to backend services" /></figure>
-                <div class="work-piece-copy">
-                  <span class="work-meta">Distributed systems · IoT</span>
-                  <h3>Cyber-Physical Systems</h3>
-                  <p>Industrial and IoT systems connecting devices, client applications and backend services through dependable, message-driven workflows.</p>
-                  <i aria-hidden="true">View reference ↗</i>
-                </div>
-              </a>
+            <article>
+              <h3><a href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">Ethereum Network Analysis</a></h3>
+              <div><p class="work-meta">Network science · Data research</p><p>A study of Ethereum transactions: preparing the data, constructing the graph, and examining whales and MEV behaviour through network analysis.</p><a class="text-link" href="https://liyouqi.github.io/data%20mining/Ehtereum-Network-Analysis-01-introduction/" target="_blank" rel="noopener">Read the research series</a></div>
             </article>
           </div>
         </div>
       </section>
 
       <section id="experience" class="section experience-section">
-        <div class="container reveal">
-          <div class="section-intro split-intro">
-            <div><p class="kicker">Experience</p><h2>A career built in layers.</h2></div>
-            <p>Software engineering led to enterprise transformation, deeper study in data and FinTech, and now practical work around ICT risk and regulatory AI.</p>
-          </div>
+        <div class="container">
+          <div class="section-intro"><h2>Experience</h2></div>
           <ol class="timeline">
             <li>
-              <span class="timeline-period">2026 — now</span>
-              <div><p class="timeline-place">Luxembourg · European headquarters</p><h3>IT Security &amp; AI</h3><p>At the European headquarters of an international bank, responsible for IT security and AI work across 13 banking entities.</p></div>
+              <span class="timeline-period">2026</span>
+              <div><h3>Bank of China (Europe) · Luxembourg</h3><p class="timeline-role">ICT Risk / IT Security Intern</p><p>Work on ICT risk, vulnerability management, monitoring and security controls, alongside applied AI engineering.</p></div>
             </li>
             <li>
               <span class="timeline-period">2024 — 2026</span>
-              <div><p class="timeline-place">France · Italy</p><h3>Computer Science &amp; FinTech</h3><p>Graduate study focused on computer science, data, financial technology and applied machine learning.</p></div>
+              <div><h3>EIT Digital Master · France / Italy</h3><p class="timeline-role">Computer Science &amp; FinTech</p><p>University of Rennes and University of Trento. Graduate study across computer science, data science and financial technology.</p></div>
             </li>
             <li>
-              <span class="timeline-period">2018 — 2023</span>
-              <div><p class="timeline-place">China</p><h3>Digital Transformation</h3><p>Enterprise systems, SaaS workflows, backend platforms and technical leadership.</p></div>
+              <span class="timeline-period">Enterprise IT</span>
+              <div><h3>China Tower</h3><p class="timeline-role">IT &amp; Data Engineer</p><p>Enterprise IT platforms, data workflows and production support.</p></div>
             </li>
             <li>
-              <span class="timeline-period">2011 — 2018</span>
-              <div><p class="timeline-place">Shenzhen · Changsha</p><h3>Software Engineering</h3><p>Mobile products, internet applications, backend services and client/server systems.</p></div>
+              <span class="timeline-period">Technical leadership</span>
+              <div><h3>Broad Housing</h3><p class="timeline-role">Digital Systems Lead</p><p>Enterprise software platforms and Java microservices. Architecture, technical leadership and engineering delivery, including Cube Cloud.</p></div>
+            </li>
+            <li>
+              <span class="timeline-period">Software engineering</span>
+              <div><h3>Talkweb</h3><p class="timeline-role">Software Engineer</p><p>Client engineering, system integration and cross-platform development for large education platforms.</p></div>
             </li>
           </ol>
         </div>
       </section>
 
       <section class="section tools-section">
-        <div class="container reveal">
-          <div class="section-intro split-intro">
-            <div><p class="kicker">Tools I work with</p><h2>A practical, evolving toolkit.</h2></div>
-            <p>Grouped by where I use them—not as a claim to know every tool equally.</p>
-          </div>
+        <div class="container">
+          <div class="section-intro"><h2>Tools I work with</h2></div>
           <div class="tool-groups">
-            <article class="tool-group">
-              <div><span>01</span><h3>AI &amp; Data</h3></div>
-              <ul class="icon-wall">
-                <li><img src="assets/icons/python.svg" alt="" /><span>Python</span></li>
-                <li><img src="assets/icons/fastapi.svg" alt="" /><span>FastAPI</span></li>
-                <li><img src="assets/icons/pandas.svg" alt="" /><span>Pandas</span></li>
-                <li><img src="assets/icons/numpy.svg" alt="" /><span>NumPy</span></li>
-                <li><img src="assets/icons/scikitlearn.svg" alt="" /><span>Scikit-learn</span></li>
-              </ul>
-            </article>
-            <article class="tool-group">
-              <div><span>02</span><h3>Backend &amp; Systems</h3></div>
-              <ul class="icon-wall">
-                <li><img src="assets/icons/java.svg" alt="" /><span>Java</span></li>
-                <li><img src="assets/icons/springboot.svg" alt="" /><span>Spring</span></li>
-                <li><img src="assets/icons/mysql.svg" alt="" /><span>MySQL</span></li>
-                <li><img src="assets/icons/mongodb.svg" alt="" /><span>MongoDB</span></li>
-                <li><img src="assets/icons/docker.svg" alt="" /><span>Docker</span></li>
-                <li><img src="assets/icons/linux.svg" alt="" /><span>Linux</span></li>
-              </ul>
-            </article>
-            <article class="tool-group">
-              <div><span>03</span><h3>Web</h3></div>
-              <ul class="icon-wall">
-                <li><img src="assets/icons/javascript.svg" alt="" /><span>JavaScript</span></li>
-                <li><img src="assets/icons/typescript.svg" alt="" /><span>TypeScript</span></li>
-                <li><img src="assets/icons/react.svg" alt="" /><span>React</span></li>
-                <li><img src="assets/icons/html5.svg" alt="" /><span>HTML</span></li>
-                <li><img src="assets/icons/css3.svg" alt="" /><span>CSS</span></li>
-              </ul>
-            </article>
-            <article class="tool-group">
-              <div><span>04</span><h3>Cloud &amp; Engineering</h3></div>
-              <ul class="icon-wall">
-                <li><img src="assets/icons/git.svg" alt="" /><span>Git</span></li>
-                <li><img src="assets/icons/googlecloud.svg" alt="" /><span>GCP</span></li>
-                <li><img src="assets/icons/aws.svg" alt="" /><span>AWS</span></li>
-              </ul>
-            </article>
+            <article class="tool-group"><div><h3>Backend &amp; Distributed Systems</h3></div><ul class="tool-list"><li>Java</li><li>Spring Boot / Cloud</li><li>MySQL</li><li>Redis</li><li>RocketMQ</li></ul></article>
+            <article class="tool-group"><div><h3>Applied AI &amp; Data</h3></div><ul class="tool-list"><li>Python</li><li>LangGraph</li><li>Retrieval &amp; evaluation</li><li>FastAPI</li><li>SQLite</li><li>Pandas</li></ul></article>
+            <article class="tool-group"><div><h3>Engineering &amp; Delivery</h3></div><ul class="tool-list"><li>Docker</li><li>Jenkins / CI/CD</li><li>Linux</li><li>ELK</li><li>SkyWalking</li></ul></article>
           </div>
-          <div class="earlier-tools">
-            <span>Earlier technologies</span>
-            <ul>
-              <li><img src="assets/icons/ios.svg" alt="" />iOS</li>
-              <li><img src="assets/icons/flutter.svg" alt="" />Flutter</li>
-              <li><img src="assets/icons/apachehadoop.svg" alt="" />Hadoop</li>
-              <li><img src="assets/icons/apachespark.svg" alt="" />Spark</li>
-              <li><img src="assets/icons/cocos2d.svg" alt="" />Cocos2d</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="writing" class="section writing-section">
-        <div class="container reveal">
-          <div class="section-intro split-intro">
-            <div><p class="kicker">Writing</p><h2>Notes from learning and building.</h2></div>
-            <p>Long-form thinking about regulatory technology, cybersecurity, AI engineering and network science.</p>
-          </div>
-          <div class="writing-list">
-            <a href="https://liyouqi.github.io/cybersecurity/Learning-Dora-4-zh/" target="_blank" rel="noopener">
-              <span class="writing-meta">DORA · ICT risk</span><strong>Learning DORA 04</strong><p>Vulnerability remediation, ownership and accountability.</p><i aria-hidden="true">↗</i>
-            </a>
-            <a href="https://liyouqi.github.io/data%20mining/Market-Fear-Regime-Identification-03/" target="_blank" rel="noopener">
-              <span class="writing-meta">Data · Financial markets</span><strong>Market Fear Regime Identification</strong><p>Clustering and network analysis across market regimes.</p><i aria-hidden="true">↗</i>
-            </a>
-            <a href="https://liyouqi.github.io/ai/no-gpu-deep-learning-engineering-guide-2025/" target="_blank" rel="noopener">
-              <span class="writing-meta">AI · Engineering</span><strong>Working Without a GPU</strong><p>A practical guide to deep-learning work with constrained compute.</p><i aria-hidden="true">↗</i>
-            </a>
-          </div>
-          <a class="text-link writing-more" href="https://liyouqi.github.io/" target="_blank" rel="noopener">View all writing <span aria-hidden="true">↗</span></a>
+          <div class="earlier-tools"><span>Also worked with</span><p>TypeScript / React · iOS · Flutter · Hadoop / Spark</p></div>
         </div>
       </section>
 
       <section class="contact-section">
-        <div class="container contact-inner reveal">
-          <p class="kicker">Contact</p>
-          <h2>Let’s talk.</h2>
-          <p>Interested in AI, FinTech, RegTech or building practical systems around complex information?</p>
+        <div class="container contact-inner">
+          <h2>Contact</h2>
+          <p>For engineering roles, technical collaboration, or a conversation about the work above, you can reach me on LinkedIn.</p>
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/da-l-04901483" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/liyouqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
